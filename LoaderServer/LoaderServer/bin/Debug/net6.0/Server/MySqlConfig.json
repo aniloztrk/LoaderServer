@@ -1,0 +1,7 @@
+{
+  "Server": "localhost",
+  "Database": "LoaderServer",
+  "UID": "root",
+  "Password": "",
+  "Port": "3306"
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="I18N">
+        <HintPath>..\..\..\Desktop\Masaüstü2\SQL\I18N.dll</HintPath>
+      </Reference>
+      <Reference Include="I18N.West">
+        <HintPath>..\..\..\Desktop\Masaüstü2\SQL\I18N.West.dll</HintPath>
+      </Reference>
+      <Reference Include="MySql.Data">
+        <HintPath>..\..\..\Desktop\Masaüstü2\SQL\MySql.Data.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

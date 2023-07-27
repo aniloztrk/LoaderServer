@@ -1,0 +1,6 @@
+{
+  "Ip": "localhost",
+  "ResponsePort": "3090",
+  "RequestPort": "3091",
+  "LoaderVersion": "1.0.0.3"
+}
