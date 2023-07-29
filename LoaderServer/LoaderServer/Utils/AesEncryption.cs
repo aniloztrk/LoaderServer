@@ -9,7 +9,7 @@ public class AesEncryption
     {
         using (var encryptor = Aes.Create())
         {
-            var pdb = new Rfc2898DeriveBytes("Xj!685f8z!?h1+2F8T4HBaYFd4?4F30J(dNUL21NM{|xR5/M)ZWC%nht£x7D@mO=2Z{Evp#'e43Y3v!F", new byte[] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31 });
+            var pdb = new Rfc2898DeriveBytes("--key--", new byte[] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31 });
             encryptor.Key = pdb.GetBytes(32);
             encryptor.IV = pdb.GetBytes(16);
             using (var ms = new MemoryStream())
@@ -29,7 +29,7 @@ public class AesEncryption
         byte[] clearBytes = Encoding.Unicode.GetBytes(text);
         using (var encryptor = Aes.Create())
         {
-            var pdb = new Rfc2898DeriveBytes("Xj!685f8z!?h1+2F8T4HBaYFd4?4F30J(dNUL21NM{|xR5/M)ZWC%nht£x7D@mO=2Z{Evp#'e43Y3v!F", new byte[] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31 });
+            var pdb = new Rfc2898DeriveBytes("--key--", new byte[] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x31 });
             encryptor.Key = pdb.GetBytes(32);
             encryptor.IV = pdb.GetBytes(16);
             using (var ms = new MemoryStream())
